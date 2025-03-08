@@ -44,7 +44,7 @@ btn.forEach(lp=>{
        lp.classList.remove('hover:bg-[#03179b]');
        total_task--;
        if(total_task===0){
-           alert('congrates!!! You have completed all current the task');
+           alert('Congrates!!! You have completed all current the task');
        }
        task.textContent = '0'+total_task;
        let element=document.querySelector('.done-task');

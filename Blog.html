@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        .font-poppins{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+         
+
+
+</head>
+<body class="bg-[#F4F7FF] m-2 font-poppins">
+    <header class="container mx-auto max-w-screen-xl">
+         <nav class="flex justify-between items-center p-2 bg-[#FFFFFF] text-black rounded-md">
+            <div class="logo flex items-center gap-x-2">
+                <img src="./assets/logo.png" alt="logo">
+                <span class="text-[35px]">Dev<span class="font-bold">Board</span></span>
+            </div>
+            <div class="navlist flex items-center gap-x-4">
+                <button class="go-to-home bg-[#3752FD] px-4 py-1 rounded-md text-white font-semibold hover:bg-[#03179b] transform transition-all duration-500 ease-in-out" type="button">Back to Desk</button>
+            </div>
+         </nav>
+    </header>
+
+    <main class="container rounded-md mx-auto max-w-screen-xl flex  items-center flex-col gap-y-4 p-4 mt-8">
+         <h1 class="text-black font-bold text-3xl">Blogs</h1>
+        <div class="w-full  bg-white p-4 rounded-md">
+            <p class="text-black font-semibold text-xl border-b-2 border-dashed border-[#767c8e] pb-1">Question-1: What are the different ways to select an element in the DOM?</p>
+            <div>
+                <p>
+                    <ul class="list-disc list-inside pl-6 pt-2">
+                        <li><b>getElementById</b> - Selects an element by its ID.</li>
+                        <li><b>getElementsByClassName</b> - Selects elements by class name.</li>
+                        <li><b>getElementsByTagName</b> - Selects elements by tag name.</li>
+                        <li><b>querySelector</b> - Selects the first element matching a CSS selector.</li>
+                        <li><b>querySelectorAll</b> - Selects all elements matching a CSS selector.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="w-full bg-white p-4 rounded-md">
+            <p class="text-black font-semibold text-xl border-b-2 border-dashed border-[#767c8e] pb-1">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+             <p>
+                <ul class="list-disc list-inside pl-6 pt-2">
+                    <li><b>innerHTML</b> - Gets or sets HTML content, including tags.</li>
+                    <li><b>innerText</b> - Gets or sets visible text, ignoring hidden elements.</li>
+                    <li><b>textContent</b> - Gets or sets all text, including hidden elements, without formatting.</li>
+                    
+                </ul>
+             </p>
+        </div>
+        <div class="w-full bg-white p-4 rounded-md">
+            <p class="text-black font-semibold text-xl border-b-2 border-dashed border-[#767c8e] pb-1">Question-3: What is event delegation in the DOM?</p>
+            <p >
+                <ul class="list-disc list-outside pl-10 pt-2">
+                    <li><b>Event Delegation</b> - A technique where a parent element handles events for its child elements using <code>event.target</code>.</li>
+                    
+                </ul>
+            </p>
+        </div>
+        <div class="w-full bg-white p-4 rounded-md">
+            <p class="text-black font-semibold text-xl border-b-2 border-dashed border-[#767c8e] pb-1">Question-4: What is event bubbling in the DOM?</p>
+            <p >
+                <ul class="list-disc list-outside pl-10 pt-2">
+                    <li><b>Event Bubbling</b> - When an event starts from the target element and propagates up to its ancestors.</li>
+                    <li><b>Example:</b> Clicking a button inside a div triggers the button’s event first, then the div’s event.</li>
+                    
+                </ul>
+            </p>
+        </div>
+        <div class="w-full bg-white p-4 rounded-md">
+            <p class="text-black font-semibold text-xl border-b-2 border-dashed border-[#767c8e] pb-1">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <p >
+                <ul class="list-disc list-outside pl-10 pt-2">
+                    <li><b>Create Element:</b> <code>let div = document.createElement("div");</code></li>
+                    <li><b>Add Element:</b> <code>document.body.appendChild(div);</code></li>
+                    <li><b>Remove Element:</b> <code>div.remove();</code></li>
+                </ul>
+        </div>
+
+    </main>
+
+    <script>
+         document.querySelector('.go-to-home').addEventListener('click',()=>{
+              window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
